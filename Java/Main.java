@@ -10,7 +10,7 @@ class Main {
         UberX uberX = new UberX("AMQ123", new Account("Damián Arp", "55555"), "Chevrolet", "Spark");
 
         // Asignamos el dato al atributo restante del objeto a través de su setter.
-        uberX.setPassenger(7);
+        uberX.setPassenger(4);
 
         // Accedemos a los datos, con el método que creamos en la clase.
         uberX.printDataCar();
@@ -18,12 +18,35 @@ class Main {
         // Creamos otro objeto de la clase Car.
         // Le pasamos los parámetros obligatorios definidos en el método constructor.
         // En este caso, los parámetros obligatorios son 'license' y 'driver', pero los datos 'driver' provienen de la clase Account, por lo que tenemos que crear un nuevo objeto Account como parámetro dentro del objeto car y pasarle como parámetro el 'name' y el 'document', ya que son los parámetros obligatorios definidos en el método constructor de la clase Account.
+        UberPool uberPool = new UberPool("KFR866", new Account("Gabriel Arp", "77777"), "Eco Sport", "Adventure");
+
+        // Asignamos el dato al atributo restante del objeto a través de su setter.
+        uberPool.setPassenger(4);
+
+        // Accedemos a los datos, con el método que creamos en la clase.
+        uberPool.printDataCar();
+        
+        // Creamos otro objeto de la clase Car.
+        // Le pasamos los parámetros obligatorios definidos en el método constructor.
+        // En este caso, los parámetros obligatorios son 'license' y 'driver', pero los datos 'driver' provienen de la clase Account, por lo que tenemos que crear un nuevo objeto Account como parámetro dentro del objeto car y pasarle como parámetro el 'name' y el 'document', ya que son los parámetros obligatorios definidos en el método constructor de la clase Account.
+        UberBlack uberBlack = new UberBlack("MME553", new Account("Anibal Arp", "33333"), "Fiat", "Duna");
+
+        // Asignamos el dato al atributo restante del objeto a través de su setter.
+        uberBlack.setPassenger(4);
+
+        // Accedemos a los datos, con el método que creamos en la clase.
+        uberBlack.printDataCar(); 
+
+        // Creamos otro objeto de la clase Car.
+        // Le pasamos los parámetros obligatorios definidos en el método constructor.
+        // En este caso, los parámetros obligatorios son 'license' y 'driver', pero los datos 'driver' provienen de la clase Account, por lo que tenemos que crear un nuevo objeto Account como parámetro dentro del objeto car y pasarle como parámetro el 'name' y el 'document', ya que son los parámetros obligatorios definidos en el método constructor de la clase Account.
         UberVan uberVan = new UberVan("JYD486", new Account("Gastón Arp", "66666"), "Ford", "Fiesta");
 
         // Asignamos el dato al atributo restante del objeto a través de su setter.
-        uberVan.setPassenger(7);
+        uberVan.setPassenger(6);
 
         // Accedemos a los datos, con el método que creamos en la clase.
-        uberVan.printDataCar();        
+        uberVan.printDataCar();
+        
     }
 }

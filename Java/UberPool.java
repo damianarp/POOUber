@@ -15,4 +15,24 @@ class UberPool extends Car {
         this.brand = brand;
         this.model = model;
     }
+    @Override
+    public void setPassenger(Integer passenger) {
+        // Validamos que el nùmero de pasajeros sea igual a 4.
+        if(passenger == 4) {
+            // Accedemos al método setPassenger de la clase padre y le pasamos 'passenger' como atributo.
+            super.setPassenger(passenger);
+        } else {
+            System.out.println("Necesitas asignar 4 pasajeros");
+        }    
+    }
+
+        // Con override se sobreescribe el método que viene de la clase padre Car (polimorfismo).
+        @Override
+        void printDataCar() {
+            // Accedemos al método de la clase padre.
+            super.printDataCar();
+            System.out.println("Brand: " + brand);
+            System.out.println("Model: " + model);
+            System.out.println();
+        }
 }

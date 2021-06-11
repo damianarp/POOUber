@@ -17,11 +17,13 @@ class UberX extends Car {
    }
    @Override
    public void setPassenger(Integer passenger) {
-    if(passenger == 4) {
-        super.setPassenger(passenger);
-     } else {
-        System.out.println("Necesitas asignar 4 pasajeros");
-     }  
+       // Validamos que el nùmero de pasajeros sea igual a 4.
+        if(passenger == 4) {
+            // Accedemos al método setPassenger de la clase padre y le pasamos 'passenger' como atributo.
+            super.setPassenger(passenger);
+        } else {
+            System.out.println("Necesitas asignar 4 pasajeros");
+        }  
        
    }
 
@@ -30,6 +32,8 @@ class UberX extends Car {
     void printDataCar() {
         // Accedemos al método de la clase padre.
         super.printDataCar();
-        System.out.println("Model: " + model + " Brand: " + brand);
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println();
     }
 }

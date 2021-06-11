@@ -27,7 +27,9 @@ class Car {
    void printDataCar() {
       // Validamos que el dato 'passenger' sea distinto de null para imprimir los datos.
       if(passenger != null) {
-         System.out.println("License: " + license + " Name Driver: " + driver.name + " Passengers: " + passenger);
+         System.out.println("License: " + license);
+         System.out.println("Name Driver: " + driver.name);
+         System.out.println("Passengers: " + passenger);
       }
    }
 
@@ -47,10 +49,7 @@ class Car {
    // Cuarto, le pasamos como parámetro el tipo y nombre de dato que recibe.
    // Accedemos al atributo de la clase Car a través del keyword 'this' y le asignamos el parámetro del setter.
    public void setPassenger(Integer passenger) {
-      // Validamos que el número de pasajeros sea igual a 4.
-      
-         this.passenger = passenger;
-      
+         this.passenger = passenger; 
    }
 
    // Creamos el método 'getter' del atributo 'id' para poder accederlo y modificarlo dentro de la clase.

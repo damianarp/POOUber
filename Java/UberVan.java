@@ -23,8 +23,9 @@ class UberVan extends Car {
     @Override
     public void setPassenger(Integer passenger) {
         // Validamos que el número de pasajeros sea igual a 6.
-        if(passenger == 6) {        
-            super.setPassenger(passenger); // NO FUNCIONA!!!!
+        if(passenger == 6) {
+            // Accedemos al método setPassenger de la clase padre y le pasamos 'passenger' como atributo.    
+            super.setPassenger(passenger);
         } else {
             System.out.println("Necesitas asignar 6 pasajeros");
         }  
@@ -35,7 +36,9 @@ class UberVan extends Car {
     void printDataCar() {
         // Accedemos al método de la clase padre.
         super.printDataCar();
-        System.out.println("Model: " + model + " Brand: " + brand);
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println();
     }
 
 }
