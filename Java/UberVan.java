@@ -4,7 +4,8 @@
 class UberVan extends Car {
     String brand;
     String model;
-    private Integer passenger;
+    
+    
 
     // Debemos definir el contructor que coincida con la clase que se está heredando (la clase padre o, también llamada, superclase).
     // Primero, usamos el keyword 'public' para el acceso.
@@ -23,7 +24,7 @@ class UberVan extends Car {
     public void setPassenger(Integer passenger) {
         // Validamos que el número de pasajeros sea igual a 6.
         if(passenger == 6) {        
-            this.passenger = passenger; // NO FUNCIONA!!!!
+            super.setPassenger(passenger); // NO FUNCIONA!!!!
         } else {
             System.out.println("Necesitas asignar 6 pasajeros");
         }  

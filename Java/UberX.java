@@ -15,6 +15,15 @@ class UberX extends Car {
        this.brand = brand;
        this.model = model;
    }
+   @Override
+   public void setPassenger(Integer passenger) {
+    if(passenger == 4) {
+        super.setPassenger(passenger);
+     } else {
+        System.out.println("Necesitas asignar 4 pasajeros");
+     }  
+       
+   }
 
     // Con override se sobreescribe el método que viene de la clase padre Car (polimorfismo).
     @Override

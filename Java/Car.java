@@ -48,11 +48,9 @@ class Car {
    // Accedemos al atributo de la clase Car a través del keyword 'this' y le asignamos el parámetro del setter.
    public void setPassenger(Integer passenger) {
       // Validamos que el número de pasajeros sea igual a 4.
-      if(passenger == 4) {
+      
          this.passenger = passenger;
-      } else {
-         System.out.println("Necesitas asignar 4 pasajeros");
-      }  
+      
    }
 
    // Creamos el método 'getter' del atributo 'id' para poder accederlo y modificarlo dentro de la clase.

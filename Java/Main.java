@@ -10,7 +10,7 @@ class Main {
         UberX uberX = new UberX("AMQ123", new Account("Damián Arp", "55555"), "Chevrolet", "Spark");
 
         // Asignamos el dato al atributo restante del objeto a través de su setter.
-        uberX.setPassenger(4);
+        uberX.setPassenger(7);
 
         // Accedemos a los datos, con el método que creamos en la clase.
         uberX.printDataCar();
@@ -21,7 +21,7 @@ class Main {
         UberVan uberVan = new UberVan("JYD486", new Account("Gastón Arp", "66666"), "Ford", "Fiesta");
 
         // Asignamos el dato al atributo restante del objeto a través de su setter.
-        uberVan.setPassenger(6);
+        uberVan.setPassenger(7);
 
         // Accedemos a los datos, con el método que creamos en la clase.
         uberVan.printDataCar();        
